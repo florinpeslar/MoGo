@@ -1,90 +1,22 @@
 /* CSS STYLE */
 
-/*MEDIA QUERIES*/
-
-@media only screen and (max-width: 1024px) {
-    .roboto.paragraph {
-        width: 650px;
-        font-size: 10px;
-    }
-
-    .main_about_3_img.margin_auto img {
-        width: 100%;
-        margin-left: 50px;
-    }
-
-    .main_content {
-        width: 100%;
-
-    }
-
-}
-
-
-@media only screen and (max-width: 768px) {
-    .logo img {
-        width: 40%;
-        margin-top: 10px;
-    }
-
-    .navbar {
-        margin: 0;
-        font-size: 12px;
-        width: 55%;
-        float: right;
-        margin-right: 60px;
-    }
-
-    .second_nav {
-        width: 90%;
-        font-size: 11px;
-    }
-
-    .roboto.paragraph {
-        width: 550px;
-        font-size: 9px;
-    }
-
-    .main_about_3_img.margin_auto img {
-        width: 100%;
-        margin-left: 110px;
-        padding-top: 10px;
-    }
-
-    .main_about_3_img.margin_auto {
-        width: 450px;
-    }
-
-    .members_bar_info {
-        font-size: 0.74em;
-    }
-
-}
-
-
 * {
     font-family: Montserrat;
-
-
 }
-
-
 
 /* NAVBAR LOGO*/
 .header {
-    xborder: 1px solid black;
     padding-bottom: 20px;
-    background-color: background:-webkit-gradient(left top, left bottom, color-stop(0%, rgba(244,219,215,1)), color-stop(0%, rgba(219,95,79,1)), color-stop(38%, rgba(225,96,76,1)), color-stop(100%, rgba(194,156,43,1)));
+    background-color: background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(244,219,215,1)), color-stop(0%, rgba(219,95,79,1)), color-stop(38%, rgba(225,96,76,1)), color-stop(100%, rgba(194,156,43,1)));
     background: -webkit-linear-gradient(top, rgba(244,219,215,1) 0%, rgba(219,95,79,1) 0%, rgba(225,96,76,1) 38%, rgba(194,156,43,1) 100%);
     background: -o-linear-gradient(top, rgba(244,219,215,1) 0%, rgba(219,95,79,1) 0%, rgba(225,96,76,1) 38%, rgba(194,156,43,1) 100%);
     background: -ms-linear-gradient(top, rgba(244,219,215,1) 0%, rgba(219,95,79,1) 0%, rgba(225,96,76,1) 38%, rgba(194,156,43,1) 100%);
     background: linear-gradient(to bottom, rgba(244,219,215,1) 0%, rgba(219,95,79,1) 0%, rgba(225,96,76,1) 38%, rgba(194,156,43,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4dbd7', endColorstr='#c29c2b', GradientType=0 );
-    opcity: 10;
+    opacity: 10;
 }
 
 .main_menu {
-    xborder: 1px solid black;
     width: 100%;
     height: 50px;
     display: block;
@@ -92,7 +24,6 @@
 }
 
 .logo {
-    xborder: 1px solid black;
     width: 25%;
     height: 50px;
     display: block;
@@ -158,6 +89,7 @@ input {
     font-family: "Kaushan Script";
     text-align: center;
     margin-top: 25px;
+    color: #333333;
 }
 
 .kaushan.creative_t {
@@ -273,7 +205,6 @@ input {
    width: 100%;
 }
 
-
 .img_2 {
 
     width: 250px;
@@ -304,28 +235,35 @@ input {
 
 
 /* members bar*/
-
-.clearfix {
-    clear: both;
-}
-
-.letters-characters{
-    margin-right: 50px;
-
-}
-
 .members_bar_info {
     width: 100%;
-    height: 150px;
     background-color: #3BD3BA;
     color: white;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+
 }
 
-.float {
-    float: left;
-    border-right: 1px solid white;
+.brd-left{
+    border-left: 1px solid #fff;
+}
+
+
+.brd-right{
+    border-right: 1px solid #fff;
+}
+
+.h150{
     height: 150px;
-    padding: 0 45px 0 45px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: right;
 }
 
 .numbers {
@@ -350,43 +288,47 @@ input {
 }
 
 .main_content {
-    xborder: 1px solid black;
-    width: 55%;
-    height: 200px;
+    height: 230px;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 65px;
 }
 
 .item {
-    xborder: 1px solid black;
     width: 25%;
     height: 65px;
-    margin: 15px 0px 25px 75px;
+    margin: 15px 0px 4% 5%;
     float: left;
+    font-size: 10px;
+    line-height: 15px;
 }
 
-.fa {
+.fa.w2 {
     float: left;
     color: #3BD3BA;
     margin: 5px 0px 0px 5px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.main-description {
+    margin-left: 40px;
 }
 
 .main_service {
+    font-size: 10px;
     text-transform: uppercase;
+    font-weight: normal;
+    color: #333333;
     float: left;
-    position: relative;
     margin: 0;
-    margin-left: 15px;
     margin-top: 5px;
 }
 
-.p {
-    font-size: 10px;
+.lorem_ipsum {
+    float: left;
+    text-align: justify;
+    color: #999999;
 }
-
-
-
 
 /* end of amazing services*/
 
@@ -412,22 +354,375 @@ input {
 
 /* end of start for all devices*/
 
+/*start of services, what we do*/
+
+.service_content {
+    width: 100%;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+
+.left-right-image {
+    text-align: center;
+}
+
+.left {
+    width: 570px;
+    height: 365px;
+    display: inline-block;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    width: 570px;
+    height: 375px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.v-1 {
+    width: 570px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+}
+
+.v-1.b {
+    width: 570px;
+    height: 170px;
+    margin-top: -1px;
+}
+
+.v-1.c {
+    width: 570px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.v-1.d {
+    margin-left:0;
+    margin-top: 15px;
+}
+
+
+.b p {
+    font-size: 15px;
+    font-family: roboto;
+    color: #999999;
+    text-align: justify;
+    margin: 25px 25px 25px 25px;
+}
+
+
+.z-1 {
+    font-size: 14px;
+    float: left;
+    margin: 15px 0px 15px 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.fa.w3 {
+    float: left;
+    color: #3BD3BA;
+    margin: 10px 0px 0px 10px;
+    font-size: 30px;
+}
+
+.fa.w4 {
+    float: right;
+    color: #CCCCCC;
+    margin: 10px 10px 0px 0px;
+    font-size: 30px;
+}
+/*end of services, what we do*/
+
+
+/* start of qoute*/
+.quote_content {
+    background-color: #F8F8F8;
+    width: auto;
+    margin-top: 150px;
+}
+
+.main_quote {
+   margin: 0 auto;
+   padding-top: 50px;
+   width: 1000px;
+   height: 200px;
+}
+
+.img-quote {
+    float: left;
+}
+
+.quote {
+    float: left;
+    width: 700px;
+    margin-left: 50px;
+}
+
+.quote p {
+    font-family: "Roboto Condensed Light";
+    font-size: 24px;
+    margin-top: 5px;
+    color: #999999;
+    text-align: justify;
+}
+
+.signature {
+    font-family: "Kaushan Script";
+    font-weight: normal;
+}
+
+
+.line_before {
+    background: #F38181;
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+    margin: 13px 10px;
+    float: left;
+}
+
+
+/* end of qoute*/
+
+
+/* Global styles */
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+.content{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gr5_col1:after{
+
+}
+.gr5_col1{
+    width: 20%;
+    display: inline-block;
+    margin-right:-10px;
+    padding:0;
+}
+
+.gr5_col2{
+    width: 40%;
+    display: inline-block;
+    margin:0;
+}
+
+.gr5_col3{
+    width: 60%;
+    display: inline-block;
+    margin:0;
+}
+
+.gr5_col4{
+    width: 80%;
+    display: inline-block;
+    margin:0;
+}
+
+.gr5_col5{
+    width: 100%;
+    display: inline-block;
+    margin:0;
+}
+
+.div {
+    box-sizing: border-box;
+}
 
 
 
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .intro.text-center {
+        width: 768px;
+    }
+
+    .main_content {
+        width: 768px;
+    }
+
+    .content{
+        width: 768px;
+    }
+
+    .navbar {
+        margin: 0;
+        font-size: 12px;
+        width: 55%;
+        float: right;
+        margin-right: 60px;
+    }
+
+    .second_nav {
+        width: 90%;
+        font-size: 11px;
+    }
+
+    .roboto.paragraph {
+        width: 550px;
+        font-size: 9px;
+    }
+
+    .main_about_3_img.margin_auto img {
+        width: 100%;
+        margin-left: 110px;
+        padding-top: 10px;
+    }
+
+    .main_about_3_img.margin_auto {
+        width: 450px;
+    }
+
+    .members_bar_info {
+        font-size: 0.74em;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .gr5_col1{
+        width: 20%;
+        display: inline-block;
+    }
+
+    .gr5_col2{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .gr5_col3{
+        width: 60%;
+        display: inline-block;
+    }
+
+    .gr5_col4{
+        width: 80%;
+        display: inline-block;
+    }
+
+    .gr5_col5{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .v-1 {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .quote_content {
+        width: 768px;
+    }
+
+    .main_quote {
+        width: 768px;
+    }
+    .img-quote img {
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .img-quote {
+        margin: 0;
+    }
+    .quote {
+        width: 400px;
+        margin: 0;
+    }
+
+    .quote p {
+        font-size: 15px;
+    }
+}
 
 
+@media only screen and (max-width: 1024px) {
+    .roboto.paragraph {
+        width: 650px;
+        font-size: 10px;
+    }
 
+    .main_about_3_img.margin_auto img {
+        width: 100%;
+        margin-left: 50px;
+    }
 
+    .members_bar_info {
+        font-size: 0.74em;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
+    .gr5_col1{
+        width: 20%;
+        display: inline-block;
+    }
 
+    .gr5_col2{
+        width: 40%;
+        display: inline-block;
+    }
 
+    .gr5_col3{
+        width: 60%;
+        display: inline-block;
+    }
 
+    .gr5_col4{
+        width: 80%;
+        display: inline-block;
+    }
 
+    .gr5_col5{
+        width: 100%;
+        display: inline-block;
+    }
 
+    x.intro.text-center {
+        width: 1000px;
+    }
 
+    x.content {
+        width: 1000px;
+    }
 
+    x.right {
+        margin: 0;
+    }
 
-
-/*end of service*/
-
+    x.v-1 {
+        margin: 0;
+        margin-top: 30px;
+    }
+}
